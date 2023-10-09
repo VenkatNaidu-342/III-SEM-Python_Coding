@@ -1,0 +1,13 @@
+# Displaying Personal Details
+
+print('=============================================================')
+print('*** My Personal Details ***')
+print('=============================================================')
+print("--> I'm AKULA VENKAT NAIDU")
+print('--> My Father name is AKULA VENKATA APPARAO')
+print('--> My Mother name is AKULA VARALAKSHMI')
+print("--> I'm persuing BCA from ADITYA DEGREE COLLEGE")
+print('--> My hobbies are reading books, Coding')
+print("--> I'm interested in Web Development and Web Designing")
+print('--> My favourite color is Green')
+print('=============================================================')
