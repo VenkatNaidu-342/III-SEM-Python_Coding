@@ -1,0 +1,11 @@
+# EMI Calculator
+
+p = float(input("Enter principle amount : "))
+t = float(input("Enter time : "))
+r = float(input("Enter rate of interest : "))
+
+si = (p*t*r)/100
+no_of_months = t * 12
+emi = (si + p) / no_of_months
+
+print(emi)
