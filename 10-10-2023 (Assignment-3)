@@ -1,0 +1,11 @@
+# Student Total Marks and average calculation
+
+sno = int(input('Enter Student ID : '))
+sname = input('Enter Student Name : ')
+group = input('Enter Student Group : ')
+s1 = float(input('Enter Subject-1 Marks : '))
+s2 = float(input('Enter Subject-2 Marks : '))
+s3 = float(input('Enter Subject-3 Marks : '))
+total = s1 + s2 + s3
+print('Total Marks : ',total)
+print('Average Marks : ',total/3)
