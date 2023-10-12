@@ -1,0 +1,23 @@
+# To Display Student Grade
+
+sno = int(input('Enter your Number/ID : '))
+sname = input('Enter your Name : ')
+grp = input('Enter your Group : ')
+s1 = float(input('Enter C/C++ Marks : '))
+s2 = float(input('Enter JAVA Marks : '))
+s3 = float(input('Enter PYTHON Marks : '))
+
+avg = (s1+s2+s3)/3
+
+if avg >= 90:
+    print('O - GRADE')
+elif avg >= 80:
+    print('A - GRADE')
+elif avg >= 70:
+    print('B - GRADE')
+elif avg >= 60:
+    print('C - GRADE')
+elif avg >= 50:
+    print('D - GRADE')
+else:
+    print('PASS')
