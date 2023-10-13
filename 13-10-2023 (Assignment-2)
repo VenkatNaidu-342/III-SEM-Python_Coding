@@ -1,0 +1,41 @@
+# To Prepare Shopping Mall Bill
+
+shirts = 599
+pants = 499
+Tshirts = 299
+
+print('****** Welcome to PythonHub Shopping Mall ******')
+cus_name = input('Enter Customer Name : ')
+cus_phno = int(input('Enter Customer Phone Number : '))
+no_of_shirts = int(input('Enter no of Shirts : '))
+no_of_pants = int(input('Enter no of Pants : '))
+no_of_Tshirts = int(input('Enter no of T-Shirts : '))
+pc = input('Enter Promo Code : ')
+
+bill = (shirts * no_of_shirts) + (pants * no_of_pants) + (Tshirts * no_of_Tshirts)
+
+if pc == 'HOLI' or pc == 'holi':
+    disc = bill * 0.5
+elif pc == 'SUNDAY' or pc == 'sunday':
+    disc = bill * 0.4
+elif bill >= 2000:
+    disc = bill * 0.2
+elif bill >= 1000:
+    disc = bill * 0.1
+elif bill >= 500:
+    disc = bill * 0.05
+else:
+    disc = bill * 0.03
+    
+Tbill = bill - disc
+gst = Tbill * 0.12
+Obill = Tbill + gst
+
+print('=============================================')
+print('CUSTOMER NAME :',cus_name)
+print('CUSTOMER PHONE NUMBER :',cus_phno)
+print('TOTAL BILL :',bill)
+print('DISCOUNT :',disc)
+print('GST 12% :',gst)
+print('BILL TO BE PAID :',Obill)
+print('============================================='
