@@ -1,0 +1,7 @@
+# To check whether the given year is a leap year or not
+
+year = int(input('ENTER ANY YEAR : '))
+if((year % 400 == 0) or (year % 4 == 0 and year % 100 != 0)):
+    print(year,'IS A LEAP YEAR')
+else:
+    print(year,'IS NOT A LEAP YEAR')
