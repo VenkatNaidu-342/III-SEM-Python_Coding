@@ -1,0 +1,13 @@
+n = int(input('Enter a number: '))
+temp = n
+res = 0
+
+while n != 0:
+    r = n % 10
+    n = n // 10
+    res = res * 10 + r
+
+if res == temp:
+    print("PALINDROME")
+else:
+    print("NOT PALINDROME")
