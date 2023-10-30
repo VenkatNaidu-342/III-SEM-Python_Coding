@@ -1,0 +1,6 @@
+N = int(input('Enter N value to get Nth table : '))
+K = int(input('Enter K value to get nth table upto K : '))
+
+for i in range(1, K + 1):
+    
+    print(N,'x',i,'=',N * i)
