@@ -1,61 +1,64 @@
-amount=int(input())#12456
-tt=0#2000
-fh=0#500
-th=0#200
-oh=0#100
-ft=0#50
-twenty=0#20
-ten=0#10
-five=0#5
-two=0#2
-one=0#1
-while(amount>=2000):#456>=2000
-    tt=tt+1#6
-    amount=amount-2000#
-while(amount>=500):#456>=500
-    fh=fh+1#
-    amount=amount-500#
-while(amount>=200):#56>=200
-    th=th+1#2
-    amount=amount-200#56
-while(amount>=100):#56>=100
-    oh=oh+1#
-    amount=amount-100#
-while(amount>=50):#6>=50
-    ft=ft+1#1
-    amount=amount-50#6
-while(amount>=20):#6>=20
-    twenty=twenty+1
-    amount=amount-20
-while(amount>=10):#6>=10
-    ten=ten+1
-    amount=amount-10
-while(amount>=5):#1>=5
-    five=five+1#1
-    amount=amount-5#1
-while(amount>=2):#1>=2
-    two=two+1
-    amount=amount-2
-while(amount>=1):#0>=1
-    one=one+1#1
-    amount=amount-1#0
-if tt>0:
-    print('2000:'+str(tt))
-if fh>0:
-    print('500:'+str(fh))#500: 4,500:4
-if th>0:
-    print('200:',th)
-if oh>0:
-    print('100:',oh)
-if ft>0:
-    print('50:',ft)
-if twenty>0:
-    print('20:',twenty)
-if ten>0:
-    print('10:',ten)
-if five>0:
-    print('5:',five)
-if two>0:
-    print('2:',two)
-if one>0:
-    print('1:',one)
+amount = float(input("Enter the amount : "))
+
+two_thousand = 0
+five_hundred = 0
+two_hundred = 0
+one_hundred = 0
+fifty = 0
+twenty = 0
+ten = 0
+five = 0
+two = 0
+one = 0
+
+while amount >= 2000:
+    two_thousand += 1
+    amount -= 2000
+while amount >= 500:
+    five_hundred += 1
+    amount -= 500
+while amount >= 200:
+    two_hundred += 1
+    amount -= 200
+while amount >= 100:
+    one_hundred += 1
+    amount -= 100
+while amount >= 50:
+    fifty += 1
+    amount -= 50
+while amount >= 20:
+    twenty += 1
+    amount -= 20
+while amount >= 10:
+    ten += 1
+    amount -= 10
+while amount >= 5:
+    five += 1
+    amount -= 5
+while amount >= 2:
+    two += 1
+    amount -= 2
+while amount >= 1:
+    one += 1
+    amount -= 1
+
+if two_thousand > 0:
+    print('2000:', two_thousand)
+if five_hundred > 0: 
+    print('500:', five_hundred)
+if two_hundred > 0:
+    print('200:', two_hundred)
+if one_hundred > 0:
+    print('100:', one_hundred)
+if fifty > 0:
+    print('50:', fifty)
+if twenty > 0:
+    print('20:', twenty)
+if ten > 0:
+    print('10:', ten)
+if five > 0:
+    print('5:', five)
+if two > 0:
+    print('2:', two)
+if one > 0:
+    print('1:', one)
