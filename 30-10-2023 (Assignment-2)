@@ -1,0 +1,16 @@
+def perfect_Number(N):
+    sum = 0
+    for i in range(1, N):
+        if N % i == 0:
+            sum += i
+        
+    if sum == N:
+        print('PERFECT NUMBER')
+    else:
+        print('NOT PERFECT NUMBER')
+    
+    
+T = int(input())
+for i in range(T):
+    N = int(input())
+    perfect_Number(N)
