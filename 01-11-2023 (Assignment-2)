@@ -1,0 +1,8 @@
+n = int(input())
+l = []
+for i in range(0, n):
+  l.append(input())
+x = int(input())
+v = int(input())
+l[x] = v
+print(l)
