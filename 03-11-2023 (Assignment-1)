@@ -1,0 +1,10 @@
+m = int(input())
+arr1 = list(map(int, input().split()))
+n = int(input())
+arr2 = list(map(int, input().split()))
+arr1.extend(arr2)
+minn = arr1[0]
+for i in arr1:
+  if i < minn:
+    minn = i
+print(minn)
