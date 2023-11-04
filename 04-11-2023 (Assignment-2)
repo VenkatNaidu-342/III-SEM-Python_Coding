@@ -1,0 +1,13 @@
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        osum = n*(n+1)//2
+        asum = sum(nums)
+        return osum - asum
+
+nums = []
+for i in nums:
+    l.append(int(input()))
+solution = Solution()
+result = solution.missingNumber(nums)
+print(result)
