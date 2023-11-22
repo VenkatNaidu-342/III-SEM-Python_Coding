@@ -1,15 +1,9 @@
-def armstrong(n):
-    s = 0
-    temp = n
-    
-    while n > 0:
-        r = n % 10
-        s = s + (r*r*r)
-        n //= 10
-    
-    return temp == s
+def leap_year(year):
+    if year%400 == 0 or (year%4 == 0 and year%100 != 0):
+        return True
+    else:
+        return False
 
-n = int(input())
-l = [i for i in range(1,n+1) if armstrong(i)]
-for i in l:
-    print(i, end=' ')
+s,e = map(int, input().split())
+l = [i for i in range(s, e+1) if leap_year(i)]
+print(len(l))
