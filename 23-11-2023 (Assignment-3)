@@ -1,0 +1,10 @@
+n = int(input())
+l = list(map(int, input().split()))
+s, e = map(int, input().split())
+sl = l[s:e+1]
+sl.sort(reverse=True)
+for i, ele in enumerate(l):
+  if s <= i <= e:
+    print(sl.pop(0), end=' ')
+  else:
+    print(ele, end=' ')
