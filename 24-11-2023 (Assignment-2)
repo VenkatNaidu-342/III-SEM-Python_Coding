@@ -1,0 +1,86 @@
+from tkinter import *
+
+def myresult():
+    sem1 = int(sem1_marks.get())
+    sem2 = int(sem2_marks.get())
+    sem3 = int(sem3_marks.get())
+    sem4 = int(sem4_marks.get())
+    sem5 = int(sem5_marks.get())
+    sem6 = int(sem6_marks.get())
+    
+    total = sem1 + sem2 + sem3 + sem4 + sem5 + sem6
+    avg = total // 6
+    
+    if avg == 10:
+        gr = "Outstanding"
+    elif avg == 9:
+        gr = "A+"
+    elif avg == 8:
+        gr = "A"
+    elif avg == 7:
+        gr = "B"
+    elif avg == 6:
+        gr = "C"
+    elif avg == 5:
+        gr = "D"
+    elif avg == 4:
+        gr = "P"
+    else:
+        gr = "F"
+        
+    s = "CGPA: " + str(avg) + "     Grade: " + gr
+    res.config(text=s)
+
+def close_window():
+    result.destroy()
+
+result = Tk()
+result.title("Student Result")
+
+sem1 = Label(result, text="Enter Sem-1 Marks : ")
+sem1_marks = Entry(result)
+
+sem2 = Label(result, text="Enter Sem-2 Marks : ")
+sem2_marks = Entry(result)
+
+sem3 = Label(result, text="Enter Sem-3 Marks : ")
+sem3_marks = Entry(result)
+
+sem4 = Label(result, text="Enter Sem-4 Marks : ")
+sem4_marks = Entry(result)
+
+sem5 = Label(result, text="Enter Sem-5 Marks : ")
+sem5_marks = Entry(result)
+
+sem6 = Label(result, text="Enter Sem-6 Marks : ")
+sem6_marks = Entry(result)
+
+btn = Button(result, text="Submit", command=myresult)
+close = Button(result, text="Close", command=close_window)
+
+res = Label(result, text="?")
+
+sem1.grid(row=0, column=0, padx=10, pady=10)
+sem1_marks.grid(row=0, column=1, padx=10, pady=10)
+
+sem2.grid(row=1, column=0, padx=10, pady=10)
+sem2_marks.grid(row=1, column=1, padx=10, pady=10)
+
+sem3.grid(row=2, column=0, padx=10, pady=10)
+sem3_marks.grid(row=2, column=1, padx=10, pady=10)
+
+sem4.grid(row=3, column=0, padx=10, pady=10)
+sem4_marks.grid(row=3, column=1, padx=10, pady=10)
+
+sem5.grid(row=4, column=0, padx=10, pady=10)
+sem5_marks.grid(row=4, column=1, padx=10, pady=10)
+
+sem6.grid(row=5, column=0, padx=10, pady=10)
+sem6_marks.grid(row=5, column=1, padx=10, pady=10)
+
+btn.grid(row=6, column=0, padx=10, pady=10)
+close.grid(row=6, column=1, padx=10, pady=10)
+
+res.grid(row=7, column=0, columnspan=2, padx=10, pady=10)
+
+result.mainloop()
