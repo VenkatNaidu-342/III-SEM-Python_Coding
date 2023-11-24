@@ -1,0 +1,37 @@
+from tkinter import *
+
+def close_window():
+    substract.destroy()
+
+def mySub():
+    value1 = float(num1.get())
+    value2 = float(num2.get())
+        
+    res = value1 - value2
+        
+    result_label.config(text="Result: " + str(res))
+        
+
+substract = Tk()
+substract.title("Subtracting 2 numbers")
+
+l1 = Label(substract, text="Enter First Number")
+num1 = Entry(substract)
+l2 = Label(substract, text="Enter Second Number")
+num2 = Entry(substract)
+btn1 = Button(substract, text="Subtract", command=mySub)
+btn2 = Button(text='Close', command=close_window)
+result_label = Label(substract, text="Result:")
+
+l1.grid(row=0, column=0, padx=10, pady=10)
+num1.grid(row=0, column=1, padx=10, pady=10)
+
+l2.grid(row=1, column=0, padx=10, pady=10)
+num2.grid(row=1, column=1, padx=10, pady=10)
+
+btn1.grid(row=2, column=0, padx=10, pady=10)
+btn2.grid(row=2, column=1, padx=10, pady=10)
+
+result_label.grid(row=3, column=0, padx=10, pady=10)
+
+substract.mainloop()
